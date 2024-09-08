@@ -18,11 +18,11 @@ tip = double.Parse(Console.ReadLine());
 System.Console.WriteLine("Enter tip amount");
 tip = double.Parse(Console.ReadLine());
 
-double totalSandWichCOst = COST_OF_SANDWICH * numberOfSandwiches;
+double totalSandWichCost = COST_OF_SANDWICH * numberOfSandwiches;
 double totalToppingCost = COST_OF_TOPPING * numberOfToppings;
-double baseCost = totalSandWichCOst + totalToppingCost;
+double baseCost = totalSandWichCost + totalToppingCost;
 
 double orderCost = tip + baseCost*(1-DISCOUNT_AMOUNT);
-System.Console.WriteLine("Your total Cost is " + orderCost);
+System.Console.WriteLine("Your total Cost is " + Math.Round(orderCost, 2));
 
 
